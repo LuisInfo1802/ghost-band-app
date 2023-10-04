@@ -11,6 +11,14 @@ nav {
   justify-content: center;
 }
 
+footer{
+  color: white;
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
 nav button {
   margin: 0 10px;
   padding: 10px 20px;

@@ -22,7 +22,6 @@
   .album-image {
     width: 200px;
     height: 200px;
-    margin-bottom: 10px;
   }
   
   .album-details {
@@ -41,13 +40,14 @@
     justify-content: center;
   }
   .album-date{
-    
+    text-align: center;
     font-size:15px;
     
   }
   .album-info {
     color:white;
     font-size: 14px;
+    
     margin: 2px 0;
   }
   .search-input {

@@ -3,7 +3,7 @@ import '../styles/members.css';
 
 const Members = () => {
   const [members, setMembers] = useState([]);
-
+  const [searchTerm,setSearchTerm]=useState('');
   useEffect(() => {
     // Llamada a la API para obtener los miembros
     const fetchMembers = async () => {
@@ -19,10 +19,26 @@ const Members = () => {
     fetchMembers();
   }, []);
 
+  const filteredMembers = members.filter(member=>{
+    return member.real_name.toLowerCase().includes(searchTerm.toLowerCase());
+
+  });
   return (
     <div className="members-container">
       <h1 className="members-title">Members</h1>
-      {members.map(member => (
+    
+
+    <input type='text'
+    placeholder='Search the Member for real name'
+    value={searchTerm}
+    onChange={(e)=>setSearchTerm(e.target.value)}
+    className='search-input'
+    ></input>
+    
+    
+      <div className='members-list'>
+
+      {filteredMembers.map(member => (
         <div className="member-item" key={member.idMember}>
           <img src={member.image} alt={member.nickname} className="member-image" />
           <div className="member-details">
@@ -32,6 +48,7 @@ const Members = () => {
           </div>
         </div>
       ))}
+      </div>
     </div>
   );
 };

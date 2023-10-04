@@ -34,7 +34,10 @@ const App = () => {
       <div className="content">
         {renderComponent()}
       </div>
+      <footer>All rights reserved Luis Angel Sanchez 2023</footer>
+
     </div>
+
   );
 };
 

@@ -1,3 +1,7 @@
+body{
+  color: white;
+}
+
 .members-container {
     text-align: center;
     padding: 20px;
@@ -8,10 +12,14 @@
     margin-bottom: 20px;
     color: #ff6347;
   }
-  
+  .members-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .member-item {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
+    background-color: #333;
+    border: 1px solid #333;
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
@@ -23,23 +31,24 @@
   }
   
   .member-image {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-bottom: 10px;
   }
   
   .member-details {
+    font-size: 30px;
     text-align: center;
   }
   
   .member-name {
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 5px;
   }
   
   .member-info {
-    font-size: 14px;
+    font-size: 18px;
     margin: 2px 0;
   }
   

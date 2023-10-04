@@ -47,7 +47,7 @@ const Albums = () => {
           <img src={album.image} alt={album.nameAlbum} className="album-image" />
           <div className="album-details">
             <h2 className="album-name">{album.nameAlbum}</h2>
-            <p className='album-info'>Number of songs</p>
+            <p className='album-info'>Songs</p>
             <p className="album-date">{album.numSongs}</p>
             <p className='album-info'>Date Published</p>
             <p className="album-date">{formatDate(album.date_published)}</p>
