@@ -1,0 +1,47 @@
+.songs-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .songs-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ff6347; /* Color similar al logotipo de Ghost Band */
+  }
+  
+  .song-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .song-item {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: left;
+  }
+  
+  .song-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  p{
+    font-size: 15px;
+    text-align: center;
+  }
+  .song-title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .song-duration {
+    font-size: 14px;
+    text-align: center;
+  }
+  

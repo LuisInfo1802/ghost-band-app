@@ -1,0 +1,45 @@
+.albums-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .albums-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ff6347;
+  }
+  
+  .album-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .album-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .album-details {
+    text-align: center;
+  }
+  
+  .album-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .album-info {
+    font-size: 14px;
+    margin: 2px 0;
+  }
+  
