@@ -35,3 +35,15 @@ nav button:hover {
 .content {
   padding: 20px;
 }
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  nav button {
+  margin: 0 3px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #555;
+  border: none;
+  cursor: pointer;
+  }
+}

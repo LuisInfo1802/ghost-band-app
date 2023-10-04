@@ -23,7 +23,13 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+h1{
+  text-align: center;
+}
+.subtitle{
+  text-align: center;
+  font-size: 20px;
+}
 .App-link {
   color: #61dafb;
 }

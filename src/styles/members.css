@@ -51,4 +51,15 @@ body{
     font-size: 18px;
     margin: 2px 0;
   }
+  .search-input {
+    width: 30rem; /* Tamaño para pantallas grandes */
+    height: 2rem;
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media (max-width: 768px) {
+    .search-input {
+      width: 100%; /* Cambia el tamaño a 100% en dispositivos móviles */
+    }
+  }
   
