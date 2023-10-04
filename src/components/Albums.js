@@ -3,7 +3,7 @@ import '../styles/Albums.css';
 
 const Albums = () => {
   const [albums, setAlbums] = useState([]);
-
+  const [searchTerm,setSearchTerm]=useState('');
   useEffect(() => {
     // Llamada a la API para obtener los álbumes
     const fetchAlbums = async () => {
@@ -19,20 +19,47 @@ const Albums = () => {
     fetchAlbums();
   }, []);
 
+  const formatDate = (dateString) => {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return new Date(dateString).toLocaleDateString(undefined, options);
+  };
+
+  const filteredAlbums = albums.filter(album=>{
+    return album.nameAlbum.toLowerCase().includes(searchTerm.toLowerCase());
+  });
+
   return (
     <div className="albums-container">
       <h1 className="albums-title">Albums</h1>
-      {albums.map(album => (
+      <input type='text'
+      placeholder='Search the Album for name'
+      value={searchTerm}
+      onChange={(e)=> setSearchTerm(e.target.value)}
+      className='search-input'>
+      </input>
+      
+      
+      <div className='album-list'>
+      {filteredAlbums.map(album => (
+
+      
         <div className="album-item" key={album.idAlbum}>
           <img src={album.image} alt={album.nameAlbum} className="album-image" />
           <div className="album-details">
             <h2 className="album-name">{album.nameAlbum}</h2>
-            <p className="album-info">{`Songs: ${album.numSongs}`}</p>
-            <p className="album-info">{`Date Published: ${album.date_published}`}</p>
+            <p className='album-info'>Number of songs</p>
+            <p className="album-date">{album.numSongs}</p>
+            <p className='album-info'>Date Published</p>
+            <p className="album-date">{formatDate(album.date_published)}</p>
+      
           </div>
+          
         </div>
+       
       ))}
     </div>
+    </div>
+   
   );
 };
 

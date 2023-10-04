@@ -3,6 +3,7 @@ import '../styles/Songs.css'; // Importa los estilos CSS específicos para Songs
 
 const Songs = () => {
   const [songs, setSongs] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     // Llamada a la API para obtener las canciones
@@ -19,15 +20,25 @@ const Songs = () => {
     fetchData();
   }, []); // Este efecto se ejecuta solo una vez al montar el componente
 
+  const filteredSongs = songs.filter(song => {
+    return song.title.toLowerCase().includes(searchTerm.toLowerCase());
+  });
+
   return (
     <div className="songs-container">
-      <h1 className="songs-title">Songs</h1>
+      <h1 className="songs-title">Songs of Ghost</h1>
+      <input
+        type="text"
+        placeholder="Search the song by title"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        className="search-input"
+      />
       <div className="song-list">
-        {songs.map((song) => (
+        {filteredSongs.map((song) => (
           <div className="song-item" key={song.idSong}>
             <img src={song.image} alt={song.title} className="song-image" />
             <div className="song-details">
-              <p>Title</p>
               <h2 className="song-title">{song.title}</h2>
               <p>Duration</p>
               <p className="song-duration">{song.duration} Minutes</p>

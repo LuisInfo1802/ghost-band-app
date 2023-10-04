@@ -1,6 +1,6 @@
 .albums-container {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
   }
   
   .albums-title {
@@ -10,22 +10,18 @@
   }
   
   .album-item {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
     border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: left;
   }
   
   .album-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
     margin-bottom: 10px;
   }
   
@@ -34,12 +30,35 @@
   }
   
   .album-name {
+    color: white;
     font-size: 18px;
     margin-bottom: 5px;
   }
-  
+
+  .album-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .album-date{
+    
+    font-size:15px;
+    
+  }
   .album-info {
+    color:white;
     font-size: 14px;
     margin: 2px 0;
+  }
+  .search-input {
+    width: 30rem; /* Tamaño para pantallas grandes */
+    height: 2rem;
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media (max-width: 768px) {
+    .search-input {
+      width: 100%; /* Cambia el tamaño a 100% en dispositivos móviles */
+    }
   }
   
