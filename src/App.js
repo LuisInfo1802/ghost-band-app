@@ -27,7 +27,7 @@ const App = () => {
     <div>
       <header>
         <h1>Ghost Band App API REST</h1>
-        <p className='subtitle'>All about the about the band Ghost</p>
+        <p className='subtitle'>All about the band Ghost</p>
       </header>
       <nav>
         <button  onClick={() => setActiveComponent('home')}>Home</button>
