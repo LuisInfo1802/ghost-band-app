@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Ghost Band Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a test web application to practice creating and handling RESTful APIs with React JS. The application displays information about the band Ghost, including songs, albums, and members, obtained from a RESTful API. It is a responsive application, adapting to different screen sizes.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Songs:** List of songs by the band Ghost, including details such as title, duration, and release date.
 
-### `npm start`
+- **Albums:** Information about the albums of the band Ghost, including album name and the number of songs.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Members:** Details about the members of the band Ghost, including their real name, nickname, instrument, and an image.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Home:** Information about the band Ghost, including images and a brief description.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React: JavaScript library for building user interfaces.
 
-### `npm run build`
+- CSS: Style language to design the application's appearance.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- RESTful API: A RESTful API is used to fetch information about the band Ghost.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- MySQL: A database was created to store information about the band Ghost.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to Run
 
-### `npm run eject`
+1. Clone this repository: `git clone <https://github.com/LuisInfo1802/ghost-band-app>`
+2. Install dependencies: `npm install`
+3. Start the application: `npm start`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The application will be available at [https://ghost-app-api.netlify.app](https://ghost-app-api.netlify.app).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots
+- Home Page
+[![Screenshot-Home-Page.png](https://i.postimg.cc/j5Mt6RXn/imagen-2023-10-04-171156852.png)](https://postimg.cc/cgtp0yPd)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Songs Page
+[![Screenshot-Songs-Page.png](https://i.postimg.cc/RVk9Lscd/imagen-2023-10-04-171228674.png)](https://postimg.cc/Ln3rHVQg)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Albums Page
+[![Screenshot-Albums-Page.png](https://i.postimg.cc/QCZwWwLK/imagen-2023-10-04-171737527.png)](https://postimg.cc/ft5BGHRM)
 
-## Learn More
+- Members Page
+[![Screenshot-Members-Page.png](https://i.postimg.cc/fWY6hzXc/imagen-2023-10-04-171820981.png)](https://postimg.cc/Jt4TNWp0)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE).
